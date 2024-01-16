@@ -347,6 +347,27 @@ System.out.println(v);	}
 	    System.out.println(temp);
 	    break;
 	}
+	case 26:{
+
+		char[] c=s.toCharArray();
+		int count=0;
+
+		for (char d : c) {
+			if((d>=33 && d<=47)||(d>=58 && d<=64)){
+			count++;
+			}
+		}
+		System.out.println("The punctuation characters exists in the string is : "+count);
+		break;
+	}
+	case 27:{
+		s = s.replace("\\n", "\n");
+
+		int index=s.indexOf("\n");
+		String x=s.substring(0,index);
+		System.out.println(x);		
+		break;
+	}
 	
 
       default:
