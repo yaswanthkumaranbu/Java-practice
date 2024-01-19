@@ -368,6 +368,10 @@ System.out.println(v);	}
 		System.out.println(x);		
 		break;
 	}
+	case 28:{
+		System.out.print(Character.isLowerCase(s.charAt(0))?"The entered letter is a lowercase letter.":"The entered letter is not a lowercase letter.");
+		break;
+	}
 	
 
       default:
