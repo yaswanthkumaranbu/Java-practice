@@ -2,6 +2,7 @@
 import java.util.Scanner;
 import java.util.Arrays;
 import java.lang.*;
+import java.io.File;
 
 
 public class StringExample
@@ -372,6 +373,21 @@ System.out.println(v);	}
 		System.out.print(Character.isLowerCase(s.charAt(0))?"The entered letter is a lowercase letter.":"The entered letter is not a lowercase letter.");
 		break;
 	}
+	case 29:{
+		System.out.print("File content without spaces:");
+		File f;
+		Scanner scan=null;
+		try{
+		f=new File("filename.txt");
+		scan=new Scanner(f);
+		}
+		catch(Exception e){
+		}
+		while(scan.hasNextLine()){
+			System.out.print(scan.next());
+		}
+		break;
+	}
 	
 
       default:
@@ -382,6 +398,7 @@ System.out.println(v);	}
 	  break;
 
 	}
+
 
       }
 
