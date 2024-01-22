@@ -388,6 +388,14 @@ System.out.println(v);	}
 		}
 		break;
 	}
+	case 30:{
+		if(s.charAt(0)>='0' && s.charAt(0)<='9'){
+			System.out.println("It is a digit");
+		}else{
+			System.out.println("It is not a digit");
+		}
+		break;
+	}
 	
 
       default:
