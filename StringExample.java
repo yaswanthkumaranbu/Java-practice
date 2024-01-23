@@ -396,6 +396,15 @@ System.out.println(v);	}
 		}
 		break;
 	}
+	case 31 :
+	{
+		String[] str=s.split(" ");
+		for(String c:str){
+			System.out.println(c);
+		}
+		break;
+	}
+	
 	
 
       default:
